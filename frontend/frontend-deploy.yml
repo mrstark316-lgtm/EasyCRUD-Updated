@@ -5,7 +5,7 @@ metadata:
     labels:
        app: frontend
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: frontend
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: r123mahajan/frontend:latest
+          image: ashifmkndr/frontend:v1
           ports:
             - containerPort: 80
